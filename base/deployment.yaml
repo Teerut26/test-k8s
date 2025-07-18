@@ -22,8 +22,8 @@ spec:
                   envFrom:
                       - configMapRef:
                             name: polstory-config
-                - name: polstory-nginx
-                  image: nginx
-                  ports:
-                      - containerPort: 80
+                # - name: polstory-nginx
+                #   image: nginx
+                #   ports:
+                #       - containerPort: 80
 #kubectl create configmap polstory-config --from-env-file=.env
