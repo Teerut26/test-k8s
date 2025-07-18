@@ -19,11 +19,7 @@ spec:
                   image: teerut26/polstory-go:latest
                   ports:
                       - containerPort: 3000
-                  env:
-                      - name: GOOGLE_MAPS_API_KEY
-                        valueFrom:
-                            secretKeyRef:
-                                name: polstory-secret
-                                key: GOOGLE_MAPS_API_KEY
-
-#kubectl create secret generic polstory-secret --from-literal=GOOGLE_MAPS_API_KEY=value
+                  envFrom:
+                      - configMapRef:
+                            name: polstory-config
+#kubectl create configmap polstory-config --from-env-file=.env
