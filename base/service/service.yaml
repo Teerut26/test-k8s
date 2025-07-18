@@ -9,7 +9,4 @@ spec:
         - protocol: TCP
           port: 3010 # port on which the service is exposed
           targetPort: 3000 # port on which the container is running
-        # - protocol: TCP
-        #   port: 3011
-        #   targetPort: 80
     type: LoadBalancer
