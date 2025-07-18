@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: polstory-app
+    name: test-k8s
     labels:
-        app: polstory-app
+        app: test-k8s
 spec:
     replicas: 2
     selector:
         matchLabels:
-            app: polstory-app
+            app: test-k8s
     template:
         metadata:
             labels:
-                app: polstory-app
+                app: test-k8s
         spec:
             containers:
-                - name: polstory-app
+                - name: test-k8s
                   image: teerut26/polstory-go:latest
                   ports:
                       - containerPort: 3000
