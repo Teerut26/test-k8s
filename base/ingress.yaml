@@ -17,3 +17,10 @@ spec:
                             name: my-app-service
                             port:
                                 number: 3000
+                  - path: /v2
+                    pathType: Prefix
+                    backend:
+                        service:
+                            name: my-app-service
+                            port:
+                                number: 3000
