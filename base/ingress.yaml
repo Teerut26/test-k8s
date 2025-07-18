@@ -17,10 +17,3 @@ spec:
                             name: test-k8s-service
                             port:
                                 number: 3010
-                  # - path: /nginx
-                  #   pathType: Prefix
-                  #   backend:
-                  #       service:
-                  #           name: test-k8s-service
-                  #           port:
-                  #               number: 3011
