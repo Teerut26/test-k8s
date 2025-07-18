@@ -5,7 +5,7 @@ metadata:
   labels:
     app: my-app
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: my-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nginx:latest
+          image: teerut26/polstory-go:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3000
