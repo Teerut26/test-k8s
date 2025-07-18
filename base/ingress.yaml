@@ -3,9 +3,9 @@ kind: Ingress
 metadata:
   name: my-app-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    trafix.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx
+  ingressClassName: trafix
   rules:
     - host: polstory-ndis.teerut.com  # Your actual domain
       http:
